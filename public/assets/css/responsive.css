@@ -1,0 +1,1069 @@
+/* Untuk layar yang lebih kecil dari 576px */
+@media (max-width: 575.98px),
+(min-width: 576px) {
+    .global-wrapper {
+        position: relative;
+    }
+
+    .global-wrapper .accent-wrapper .first-side-accent {
+        left: -30vw;
+    }
+
+    .custom-navbar {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 200px;
+        height: auto;
+        background-color: #fff;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 999;
+        border-radius: 12px;
+    }
+
+    .mobile-navbar .nav-toggle {
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 999;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .mobile-navbar .nav-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        margin: 2px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .mobile-navbar .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .mobile-navbar .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-navbar .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .mobile-navbar .nav-menu {
+        display: none;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .mobile-navbar .nav-menu.active {
+        display: block;
+    }
+
+    .mobile-navbar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .mobile-navbar ul li {
+        margin: 0 0 10px 0;
+    }
+
+    .mobile-navbar ul li a {
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .hero .hero-content h4 {
+        font-size: 30px;
+    }
+
+    .hero .hero-content h1 {
+        font-size: 64px;
+    }
+
+    .hero .hero-content .btn-cta {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    ._custom-heading img {
+        width: 45px;
+        height: 45px;
+    }
+
+    ._custom-heading h2 {
+        font-size: 30px;
+    }
+
+    .introduction .sambutan-acara {
+        font-size: 16px;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .introduction .sambutan-acara :nth-child(3) {
+        width: 100%;
+    }
+
+    .introduction .couples .custom-frame {
+        height: 300px;
+    }
+
+    .introduction .couples .custom-frame .custom-frame-overlay {
+        width: 200px;
+        height: 200px;
+    }
+
+    .introduction .couples .custom-frame .custom-frame-overlay .sakura-circle {
+        width: 260px;
+        height: 260px;
+        top: -30px;
+        left: -30px;
+        margin: 0;
+    }
+
+    .introduction .couples .couple-desc h4 {
+        font-size: 48px;
+        font-family: var(--alex-brush-font);
+    }
+
+    .introduction .couples .couple-desc p {
+        width: 350px;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: var(--comfortaa-font);
+        color: var(--dark-gray);
+    }
+
+    .introduction .agenda {
+        padding: 20px;
+    }
+
+    .introduction .agenda .col-lg-6:first-child {
+        margin-bottom: 40px;
+    }
+
+    .introduction .agenda .card-agenda .circle-header {
+        width: 100px;
+        height: 100px;
+    }
+
+    .introduction .agenda .card-agenda .circle-header img {
+        width: 50px;
+        height: 68px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc h4 {
+        font-size: 40px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .waktu p:nth-child(1) {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .waktu p:nth-child(2) {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .waktu p:nth-child(3) {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .tempat p:nth-child(1) {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .tempat p:nth-child(2) {
+        width: 300px;
+        font-size: 18px;
+    }
+
+    .gallery-wrapper {
+        padding: 0 40px;
+    }
+
+    .donation-wrapper {
+        padding: 0 20px;
+    }
+
+    .donation-wrapper .card-donation {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .donation-wrapper .card-donation .left-donation {
+        flex: 1 1 100%;
+    }
+
+    .donation-wrapper .card-donation .left-donation .giving-hand-box {
+        width: 200px;
+        height: 200px;
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .donation-wrapper .card-donation .left-donation .description-box {
+        flex: 1 1 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .donation-wrapper .card-donation .left-donation .description-box p {
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    .rsvp-wrapper {
+        padding: 0 20px;
+    }
+
+    .rsvp-wrapper .accent-top-left {
+        width: 110px;
+        top: -50px;
+        left: -20px;
+    }
+
+    .rsvp-wrapper .rsvp-box {
+        padding: 40px;
+    }
+
+    .rsvp-wrapper .rsvp-box .accent-bottom {
+        object-position: center;
+    }
+
+    .rsvp-wrapper .rsvp-box .btn-rsvp {
+        width: 120px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer p {
+        width: 300px;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+/* Untuk layar yang lebih besar atau sama dengan 768px */
+@media (min-width: 768px) {
+    .global-wrapper {
+        position: relative;
+    }
+
+    .global-wrapper .accent-wrapper .first-side-accent {
+        left: -30vw;
+    }
+
+    .custom-navbar {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 200px;
+        height: auto;
+        background-color: #fff;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 999;
+        border-radius: 12px;
+    }
+
+    .mobile-navbar .nav-toggle {
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 999;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .mobile-navbar .nav-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        margin: 2px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .mobile-navbar .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .mobile-navbar .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-navbar .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .mobile-navbar .nav-menu {
+        display: none;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .mobile-navbar .nav-menu.active {
+        display: block;
+    }
+
+    .mobile-navbar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .mobile-navbar ul li {
+        margin: 0 0 10px 0;
+    }
+
+    .mobile-navbar ul li a {
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .hero .hero-content h4 {
+        font-size: 40px;
+    }
+
+    .hero .hero-content h1 {
+        font-size: 128px;
+    }
+
+    .hero .hero-content .btn-cta {
+        width: 242px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    ._custom-heading img {
+        width: 50px;
+        height: 50px;
+    }
+
+    ._custom-heading h2 {
+        font-size: 40px;
+    }
+
+    .introduction .sambutan-acara {
+        font-size: 18px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .introduction .sambutan-acara :nth-child(3) {
+        width: 100%;
+    }
+
+    .introduction .couples .custom-frame {
+        height: 300px;
+    }
+
+    .introduction .couples .custom-frame .custom-frame-overlay {
+        width: 200px;
+        height: 200px;
+    }
+
+    .introduction .couples .custom-frame .custom-frame-overlay .sakura-circle {
+        width: 260px;
+        height: 260px;
+        top: -30px;
+        left: -30px;
+        margin: 0;
+    }
+
+    .introduction .couples .couple-desc h4 {
+        font-size: 48px;
+        font-family: var(--alex-brush-font);
+    }
+
+    .introduction .couples .couple-desc p {
+        width: 220px;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: var(--comfortaa-font);
+        color: var(--dark-gray);
+    }
+
+    .introduction .agenda {
+        padding: 20px;
+    }
+
+    .introduction .agenda .col-lg-6:first-child {
+        margin-bottom: 40px;
+    }
+
+    .introduction .agenda .card-agenda {
+        height: auto;
+    }
+
+    .introduction .agenda .card-agenda .circle-header {
+        width: 100px;
+        height: 100px;
+    }
+
+    .introduction .agenda .card-agenda .circle-header img {
+        width: 50px;
+        height: 68px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc h4 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .waktu p:nth-child(1) {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .waktu p:nth-child(2) {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .waktu p:nth-child(3) {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .tempat p:nth-child(1) {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .tempat p:nth-child(2) {
+        width: 300px;
+        font-size: 18px;
+    }
+
+    .gallery-wrapper {
+        padding: 0 40px;
+    }
+
+    .donation-wrapper {
+        padding: 0 20px;
+    }
+
+    .donation-wrapper .card-donation {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .donation-wrapper .card-donation .left-donation {
+        flex: 1 1 100%;
+    }
+
+    .donation-wrapper .card-donation .left-donation .giving-hand-box {
+        width: 200px;
+        height: 200px;
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .donation-wrapper .card-donation .left-donation .description-box {
+        flex: 1 1 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .donation-wrapper .card-donation .left-donation .description-box p {
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    .donation-wrapper .card-donation .right-donation {
+        flex-direction: row;
+        column-gap: 20px;
+    }
+
+    .rsvp-wrapper {
+        padding: 0 20px;
+    }
+
+    .rsvp-wrapper .accent-top-left {
+        width: 110px;
+        top: -50px;
+        left: -20px;
+    }
+
+    .rsvp-wrapper .rsvp-box {
+        padding: 40px;
+    }
+
+    .rsvp-wrapper .rsvp-box .accent-bottom {
+        object-position: center;
+    }
+
+    .rsvp-wrapper .rsvp-box .btn-rsvp {
+        width: 120px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer p {
+        width: 300px;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+/* Untuk layar yang lebih besar atau sama dengan 992px */
+@media (min-width: 992px) {
+    .global-wrapper {
+        position: relative;
+    }
+
+    .global-wrapper .accent-wrapper .first-side-accent {
+        left: -30vw;
+    }
+
+    .global-wrapper .accent-wrapper .third-side-accent {
+        top: 500vh;
+    }
+
+    .custom-navbar {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 200px;
+        height: auto;
+        background-color: #fff;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 999;
+        border-radius: 12px;
+    }
+
+    .mobile-navbar .nav-toggle {
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 999;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .mobile-navbar .nav-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        margin: 2px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .mobile-navbar .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .mobile-navbar .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-navbar .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .mobile-navbar .nav-menu {
+        display: none;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .mobile-navbar .nav-menu.active {
+        display: block;
+    }
+
+    .mobile-navbar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .mobile-navbar ul li {
+        margin: 0 0 10px 0;
+    }
+
+    .mobile-navbar ul li a {
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .hero .hero-content h4 {
+        font-size: 40px;
+    }
+
+    .hero .hero-content h1 {
+        font-size: 128px;
+    }
+
+    .hero .hero-content .btn-cta {
+        width: 242px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    ._custom-heading img {
+        width: 50px;
+        height: 50px;
+    }
+
+    ._custom-heading h2 {
+        font-size: 40px;
+    }
+
+    .introduction .sambutan-acara {
+        width: 600px;
+        font-size: 18px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .introduction .sambutan-acara :nth-child(3) {
+        width: 100%;
+    }
+
+    .introduction .couples .custom-frame {
+        height: 300px;
+    }
+
+    .introduction .couples .custom-frame .custom-frame-overlay {
+        width: 250px;
+        height: 250px;
+    }
+
+    .introduction .couples .custom-frame .custom-frame-overlay .sakura-circle {
+        width: 330px;
+        height: 330px;
+        top: -40px;
+        left: -40px;
+        margin: 0;
+    }
+
+    .introduction .couples .couple-desc h4 {
+        font-size: 48px;
+        font-family: var(--alex-brush-font);
+    }
+
+    .introduction .couples .couple-desc p {
+        width: 350px;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: var(--comfortaa-font);
+        color: var(--dark-gray);
+    }
+
+    .introduction .agenda {
+        padding: 20px;
+    }
+
+    .introduction .agenda .col-lg-6:first-child {
+        margin-bottom: 40px;
+    }
+
+    .introduction .agenda .card-agenda {
+        height: auto;
+    }
+
+    .introduction .agenda .card-agenda .circle-header {
+        width: 100px;
+        height: 100px;
+    }
+
+    .introduction .agenda .card-agenda .circle-header img {
+        width: 50px;
+        height: 68px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc h4 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .waktu p:nth-child(1) {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .waktu p:nth-child(2) {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .waktu p:nth-child(3) {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .tempat p:nth-child(1) {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .tempat p:nth-child(2) {
+        width: 300px;
+        font-size: 18px;
+    }
+
+    .gallery-wrapper {
+        padding: 0 40px;
+    }
+
+    .donation-wrapper {
+        padding: 0 20px;
+    }
+
+    .donation-wrapper .card-donation {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .donation-wrapper .card-donation .left-donation {
+        flex: 1 1 100%;
+    }
+
+    .donation-wrapper .card-donation .left-donation .giving-hand-box {
+        width: 200px;
+        height: 200px;
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .donation-wrapper .card-donation .left-donation .description-box {
+        flex: 1 1 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .donation-wrapper .card-donation .left-donation .description-box p {
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    .donation-wrapper .card-donation .right-donation {
+        flex-direction: row;
+        column-gap: 20px;
+    }
+
+    .rsvp-wrapper {
+        padding: 0 20px;
+    }
+
+    .rsvp-wrapper .accent-top-left {
+        width: 110px;
+        top: -50px;
+        left: -20px;
+    }
+
+    .rsvp-wrapper .rsvp-box {
+        padding: 40px;
+    }
+
+    .rsvp-wrapper .rsvp-box .accent-bottom {
+        object-position: center;
+    }
+
+    .rsvp-wrapper .rsvp-box .btn-rsvp {
+        width: 120px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer p {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+/* Untuk layar yang lebih besar atau sama dengan 1200px */
+@media (min-width: 1200px) {
+    .global-wrapper {
+        position: relative;
+    }
+
+    .global-wrapper .accent-wrapper .first-side-accent {
+        left: -30vw;
+    }
+
+    .mobile-navbar {
+        display: none;
+    }
+
+    .custom-navbar {
+        display: block;
+    }
+
+    .hero .hero-content h4 {
+        font-size: 40px;
+    }
+
+    .hero .hero-content h1 {
+        font-size: 128px;
+    }
+
+    .hero .hero-content .btn-cta {
+        width: 242px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    ._custom-heading img {
+        width: 70px;
+        height: 70px;
+    }
+
+    ._custom-heading h2 {
+        font-size: 50px;
+    }
+
+    .introduction .sambutan-acara {
+        width: 100%;
+        font-size: 20px;
+        padding: 0 80px;
+        text-align: center;
+    }
+
+    .introduction .sambutan-acara :nth-child(3) {
+        width: 800px;
+        margin-bottom: 80px;
+    }
+
+    .introduction .couples .custom-frame {
+        height: 300px;
+    }
+
+    .introduction .couples .custom-frame .custom-frame-overlay {
+        width: 250px;
+        height: 250px;
+    }
+
+    .introduction .couples .custom-frame .custom-frame-overlay .sakura-circle {
+        width: 330px;
+        height: 330px;
+        top: -40px;
+        left: -40px;
+        margin: 0;
+    }
+
+    .introduction .couples .couple-desc h4 {
+        font-size: 58px;
+        font-family: var(--alex-brush-font);
+    }
+
+    .introduction .couples .couple-desc p {
+        width: 450px;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: var(--comfortaa-font);
+        color: var(--dark-gray);
+    }
+
+    .introduction .agenda {
+        padding: 0 40px;
+    }
+
+    .introduction .agenda .col-lg-6:first-child {
+        margin-bottom: 40px;
+    }
+
+    .introduction .agenda .card-agenda {
+        height: auto;
+    }
+
+    .introduction .agenda .card-agenda .circle-header {
+        width: 100px;
+        height: 100px;
+    }
+
+    .introduction .agenda .card-agenda .circle-header img {
+        width: 50px;
+        height: 68px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc h4 {
+        font-size: 52px;
+        margin-bottom: 50px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .waktu p:nth-child(1) {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .waktu p:nth-child(2) {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .waktu p:nth-child(3) {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .tempat p:nth-child(1) {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .introduction .agenda .card-agenda .agenda-desc .tempat p:nth-child(2) {
+        width: 300px;
+        font-size: 18px;
+    }
+
+    .gallery-wrapper {
+        padding: 0 40px;
+    }
+
+    .donation-wrapper {
+        padding: 0 80px;
+    }
+
+    .donation-wrapper .card-donation {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .donation-wrapper .card-donation .left-donation {
+        flex: 1 1 70%;
+    }
+
+    .donation-wrapper .card-donation .left-donation .giving-hand-box {
+        width: 200px;
+        height: 200px;
+        flex: 1 1 30%;
+        margin-bottom: 20px;
+    }
+
+    .donation-wrapper .card-donation .left-donation .description-box {
+        flex: 1 1 70%;
+        padding: 0 30px;
+        margin-bottom: 20px;
+    }
+
+    .donation-wrapper .card-donation .left-donation .description-box p {
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    .donation-wrapper .card-donation .right-donation {
+        flex: 1 1 30%;
+        flex-direction: column;
+    }
+
+    .rsvp-wrapper {
+        padding: 0 80px;
+    }
+
+    .rsvp-wrapper .accent-top-left {
+        width: 220px;
+        top: -110px;
+        left: -30px;
+    }
+
+    .rsvp-wrapper .rsvp-box {
+        padding: 40px;
+    }
+
+    .rsvp-wrapper .rsvp-box .accent-bottom {
+        object-position: center;
+    }
+
+    .rsvp-wrapper .rsvp-box .btn-rsvp {
+        width: 120px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer p {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+}
